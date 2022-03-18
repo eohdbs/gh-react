@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches: [ main ]
-  pull_requests: 
+  pull: 
     branches: [ main ]
 
 jobs:
@@ -18,6 +18,6 @@ jobs:
         run: echo Hello, world!
 
       - name: Run a multi-line script
-        run:
+        run:  |
           echo Add other actions to build.
           echo test, and deploy your project
